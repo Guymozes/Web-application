@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<link rel="shortcut icon" href="#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <title>Daily Meal Plan</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Custom fonts -->
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles -->
+    <link href="../static/css/daily_meal_plan.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Masthead -->
+    <header class="masthead text-black text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-2 mx-auto">
+			<h1 class="mb-auto">Matkonim</h1>
+          </div>
+		<div class="col-2 mx-auto">      
+			<h2 class="text-nowrap mb-auto">Daily Meal Plan by Recommended Intake</h2>
+		</div>
+ 		<div class="col-3">
+                <div class="coering-icon-item mx-auto mb-5 mb">
+               	 <img src="../static/img/covering.png" class="img-fluid" id="coveringIcon" alt="Responsive image">
+         		</div>
+           </div>
+	  </div>
+	</div>
+
+
+<!-- WHO ARE YOU SELECTION -->
+<div class="mb-auto text-center">
+<h3 class="mb-auto" id="who-are-you-header">Who are you?</h3>
+</div>
+<form method="POST">
+<label for="gender-choice" class="col-form-label col-3" id="gender-label">gender:</label>
+<div class="btn-group btn-group-toggle col-10" data-toggle="buttons" id="gender-choice">
+  <label class="btn btn-outline-info active btn-sm">
+    <input type="radio" name="female" id="option-female" autocomplete="off">Female</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="male" id="option-male" autocomplete="off">Male</label>
+</div>
+<label for="age-choice" class="col-form-label col-3" id="age-label">age:</label>
+<div class="btn-group btn-group-toggle col-10" data-toggle="buttons" id="age-choice">
+  <label class="btn btn-outline-info btn-sm active">
+    <input type="radio" name="14_18" id="option-14-18" autocomplete="off">14-18</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="19_30" id="option-19-30" autocomplete="off">19-30</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="31_40" id="option-31-40" autocomplete="off">31-40</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="41_50" id="option-41-50" autocomplete="off">41-50</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="51_60" id="option-51-60" autocomplete="off">51-60</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="61_70" id="option-61-70" autocomplete="off">61-70</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="71" id="option-71" autocomplete="off">71+</label>
+</div>
+
+
+<!-- WHAT MEAL SELECTION -->
+<div class="mb-auto">
+<h3 class="mb-auto" id="what-meal-header">What meal would you like to plan?</h3>
+</div>
+<div class="btn-group btn-group-toggle" data-toggle="buttons" id="what-meal-choice">
+  <label class="btn btn-outline-info active btn-sm">
+    <input type="radio" name="Breakfast and Brunch" id="option-breakfast" autocomplete="off">Breakfast</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="Lunch" id="option-lunch" autocomplete="off">Lunch</label>
+  <label class="btn btn-outline-info btn-sm">
+    <input type="radio" name="Main Dishes" id="option-dinner" autocomplete="off">Dinner</label>
+</div>
+
+
+
+<!-- NUTRITIONAL VALUES SELECTION -->
+<div class="mb-auto text-center">
+<h3 class="text-nowrap mb-auto" id="preferences-header">Choose your nutritional preferences:</h3><h5 class="text-nowrap mb-auto" id="sub-header">(as a percentage of your recommended daily intake)</h5></div>
+<div class="col-3" id="nutritional-form" method="POST">
+<div class="nutri-group" id="nutri1">
+<div class="form-group row col-10">
+	<label for="sugar-form" class="col-form-label col-3">Sugar:</label>
+	  <div class="col-7">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control" id="sugar-form" name="sugar" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri-percent-sign">%</div>
+</div>
+<div class="form-group row col-10">
+	<label for="iron-form" class="col-form-label col-3">Iron:</label>
+	  <div class="col-7">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control" id="iron-form" name="iron" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri-percent-sign">%</div>
+</div>
+<div class="form-group row col-10">
+	<label for="calcium-form" class="col-form-label col-3">Calcium:</label>
+	  <div class="col-7">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control" id="calcium-form" name="calcium" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri-percent-sign">%</div>
+</div>
+</div>
+<div class="nutri-group" id="nutri2">
+<div class="form-group row col-10">
+	<label for="sodium-form" class="col-form-label col-3">Sodium:</label>
+	  <div class="col-7">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control" id="sodium-form" name="sodium" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri-percent-sign">%</div>
+</div>
+    <div class="form-group row col-10">
+	<label for="protein-form" class="col-form-label col-3">Protein:</label>
+	  <div class="col-7">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control" id="protein-form" name="protein" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri-percent-sign">%</div>
+</div>
+<div class="form-group row col-10">
+	<label for="lactose-form" class="col-form-label col-3">Lactose:</label>
+	  <div class="col-7">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control" id="lactose-form" name="lactose" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri-percent-sign">%</div>
+</div>
+</div>
+<div class="nutri-group" id="nutri3">
+<div class="form-group row">
+	<label for="cholesterol-form" class="col-form-label col-5 nutri3-label">Cholesterol:</label>
+	  <div class="col-5 mr-8">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control col-11" id="cholesterol-form" name="cholesterol" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri3-percent-sign">%</div>
+</div>
+    <div class="form-group row">
+	<label for="satfat-form" class="col-form-label col-5 nutri3-label">Saturated Fat:</label>
+	  <div class="col-5 mr-8">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control col-11" id="satfat-form" name="saturated" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri3-percent-sign">%</div>
+</div>
+<div class="form-group row">
+	<label for="calories-form" class="col-form-label col-5 nutri3-label">Calories:</label>
+	  <div class="col-5 mr-8">
+	  <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="200"	class="form-control col-11" id="calories-form" name="calories_kcal" placeholder="Don't Care">
+  </div>
+<div class="my-2 mr-3 nutri3-percent-sign">%</div>
+</div>
+</div>
+</div>
+<!-- SUBMIT BUTTON -->
+<div class="button" id="submit-button">
+    <input type="submit" class="btn btn-lg btn-success" name="submit" value="Find me a meal plan!">
+</div>
+</form>
+
+
+<!-- EXPLANATION -->
+<div class="card bg-light" style="width: 27rem;" id="explanation-card">
+ <h5 class="card-header">Explanation:</h5>
+  <h6 class="card-body px-2 py-2">Based on your age and gender, there are recommended daily intake amounts of each nutritional value. You can choose which meal you would like to plan, and the percentage of recommended daily intake of each nutritional value. If you know about other health limitations you have (such as diabetes, lactose intolernce, high cholesterol, etc.) you might want a meal plan with different percentage than the recommended daily amounts.</h6>
+</div>
+
+
+<!-- BACK BUTTON -->
+<form  method="POST">
+  <div class="button" id="back-button">
+    <input type="submit" class="btn btn-lg btn-secondary" name="submit" value="Back to Main Menu">
+  </div>
+</form>
+
+</header>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
