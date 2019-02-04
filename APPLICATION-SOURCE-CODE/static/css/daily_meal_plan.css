@@ -1,0 +1,193 @@
+body{
+	background:url(../img/bg-masthead.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color:#343a40;
+	height:100vh;
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+h1{
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:700
+}
+h2{
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:200
+}
+h3,h4,h5,h6{
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:100
+}
+header.masthead .overlay{
+	position:fixed;
+	background-color:#FFFFFF;
+	width:100vw;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+    height: 100vh;
+	opacity:.8;
+}
+@media (min-width:200px){
+	header.masthead{
+		padding-top:0rem;
+		padding-bottom:0rem;
+	}
+	header.masthead h1{
+		font-size:3rem;
+	}
+	header.masthead h2{
+		font-size:1.7rem;
+	}
+	header.masthead h3{
+		font-size:2rem;
+	}	
+}
+
+#coveringIcon{
+	height:130%;
+	width:50%;
+	position:relative;
+	left:10rem;
+	top:2rem;
+	margin-right:auto;
+}
+header.masthead h1{
+	position:relative;
+	left:45rem;
+	top:3rem;
+}
+header.masthead h2{
+	position:relative;
+	left:4rem;
+	top:6.5rem;
+}
+#who-are-you-header{
+	position:absolute;
+	top:10rem;
+	left:10rem;
+	font-size:1.7rem;
+}
+#age-label{
+	position:absolute;
+	float:left;
+	top:11.7rem;
+	left:-3.5rem;
+}
+#age-choice{
+	position:absolute;
+	top:12rem;
+	left:8rem;
+}
+#gender-label{
+	position:absolute;
+	float:left;
+	top:14.2rem;
+	left:-4.2rem;
+}
+#gender-choice{
+	position:absolute;
+	top:14.5rem;
+	left:8rem;
+}
+#what-meal-header{
+	position:absolute;
+	left:36rem;
+	top:10rem;
+	font-size:1.7rem;
+
+}
+#what-meal-choice{
+	position:absolute;
+	top:12rem;
+	left:42rem;
+}
+
+#preferences-header{
+	position:relative;
+	top:8rem;
+	left:-16rem;
+}
+#sub-header{
+    position:relative;
+    top:8rem;
+    left:-16rem;
+}
+#nutri1{
+	position:absolute;
+	width:100%;
+	top:9rem;
+	left:3rem;
+}
+#nutri2{
+	position:absolute;
+	width:100%;
+	top:9rem;
+	left:19rem;
+}
+#nutri3{
+	position:absolute;
+	width:100%;
+	top:9rem;
+	left:32rem;
+}
+.nutri3-label{
+	position:relative;
+	left:2.5rem;
+}
+.nutri-percent-sign{
+	position:relative;
+	left:-0.5rem;	
+}
+.nutri3-percent-sign{
+	position:relative;
+	left:-1rem;	
+}
+#explanation-card{
+	position:absolute;
+	left:55rem;
+	top:16rem;
+	opacity:.8
+}
+#submit-button{
+	position:absolute;
+	top:34rem;
+	left:65rem;
+}
+#new-search-button{
+	position:absolute;
+	top:34rem;
+	left:65rem;
+}
+#back-button{
+	position:absolute;
+	top:4rem;
+	left:4rem;
+}
+
+#found-header{
+    position:absolute;
+    margin:0 auto;
+    top:10rem;
+}
+#not-found-header{
+    position:absolute;
+}
+#results{
+    position:relative;
+    margin-top:2rem;
+    float:left;
+}
+#recipe-picture{
+    position:relative;
+    right:15%;
+    margin-top:4rem;
+}
+#nutri-res-table{
+    margin-top:3rem;
+    position:relative;
+    left:35%;
+}

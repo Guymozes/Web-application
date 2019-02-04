@@ -1,0 +1,199 @@
+body{
+	background:url(../img/bg-masthead.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color:#343a40;
+	height:100vh;
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+h1{
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:700
+}
+h2{
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:200
+}
+h3,h4,h5,h6{
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:100
+}
+header.masthead .overlay{
+	position:fixed;
+	background-color:#FFFFFF;
+	width:100vw;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+    height: 100vh;
+	opacity:.8;
+}
+@media (min-width:200px){
+	header.masthead{
+		padding-top:0rem;
+		padding-bottom:0rem;
+	}
+	header.masthead h1{
+		font-size:3rem;
+	}
+	header.masthead h2{
+		font-size:1.7rem;
+	}
+	header.masthead h3{
+		font-size:2rem;
+	}
+	
+}
+
+#loafIcon{
+	height:130%;
+	width:50%;
+	position:relative;
+	left:10rem;
+	top:2rem;
+	margin-right:auto;
+}
+header.masthead h1{
+	position:relative;
+	left:45rem;
+	top:3rem;
+}
+header.masthead h2{
+	position:relative;
+	left:18rem;
+	top:6.5rem;
+}
+#which-recipe-header{
+	position:relative;
+	top:-3rem;
+}
+#food-or-cocktail{
+	position:relative;
+	top:-2.8rem;
+}
+#which-food{
+	position:relative;
+	top:-2.2rem;
+	display:none;
+}
+#allergans-header{
+	position:absolute;
+	top:19.5rem;
+}
+#allergans-wrapper{
+	position:absolute;
+	top:22rem;
+	padding-left:32%;
+}
+#inlineFormAllergan1{
+	width:500px;
+}
+#inlineFormAllergan2{
+	width:500px;
+}
+#inlineFormAllergan3{
+	width:500px;
+}
+
+#submit-button{
+	position:absolute;
+	top:34rem;
+	left:65rem;
+}
+#new-search-button{
+	position:absolute;
+	top:34rem;
+	left:65rem;
+}
+#back-button{
+	position:absolute;
+	top:4rem;
+	left:4rem;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  }
+
+#inlineFormAllergan1autocomplete-list{
+	max-height: 8rem;
+	overflow-y: scroll;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden; 
+	border-bottom: 1px solid #d4d4d4; 
+}
+#inlineFormAllergan2autocomplete-list{
+	max-height: 8rem;
+	overflow-y: scroll;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden; 
+	border-bottom: 1px solid #d4d4d4; 
+}
+#inlineFormAllergan3autocomplete-list{
+	max-height: 8rem;
+	overflow-y: scroll;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden; 
+	border-bottom: 1px solid #d4d4d4; 
+}
+
+#cocktail-found-header{
+    position:absolute;
+    margin:0 auto;
+    top:10rem;
+}
+#food-found-header{
+    position:absolute;
+    margin:0 auto;
+    top:10rem;
+}
+#not-found-header{
+    position:absolute;
+}
+#results{
+    position:relative;
+    margin-top:1rem;
+    float:left;
+}
+#recipe-picture{
+    position:relative;
+    right:15%;
+    margin-top:4rem;
+}
+#nutri-res-table{
+    margin-top:3rem;
+    position:relative;
+    left:35%;
+}
